@@ -183,10 +183,10 @@ if (isset($_POST["sendmsgverification"]) && $_POST["email"] != "" ) {
 
     <header class="">
         <div class="flex justify-between items-center shadow-2xl  bg-800 py-4 px-10 text-txt-main">
-            <a href="../index.php"><img class="w-40 lg:w-56" src="../img/Logo main.png"></a>
+            <a href="./index.php"><img class="w-40 lg:w-56" src="../img/Logo main.png"></a>
             <div>
                 <ul class="hidden lg:flex space-x-5 items-center">
-                    <li class=""><a class="font-bold hover:text-500" href="../index.php">HOME</a></li>
+                    <li class=""><a class="font-bold hover:text-500" href="./index.php">HOME</a></li>
                     <div class="relative flex items-center space-x-2 cursor-pointer">
                         <div class="font-bold hover:text-500 space-x-1">
                             <button id="closeshoptab" onclick="openshop()">SHOP</button>

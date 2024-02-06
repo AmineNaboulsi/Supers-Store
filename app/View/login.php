@@ -61,7 +61,6 @@
             header("location: login.php");
         }
         else{
-            setcookie("login" , "valid");
             header("location: admindashboard.php");
         }
     }

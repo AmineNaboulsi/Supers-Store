@@ -2,7 +2,6 @@
 require 'connection.php';
 
 if (isset($_POST["addshoe"])) {
-
     $name = $_POST["name"];
     $price = $_POST["price"];
     if ($_FILES["imageshoe"]) {
@@ -11,7 +10,7 @@ if (isset($_POST["addshoe"])) {
 
         $imgname = uniqid() . $image_name;
 
-        move_uploaded_file($_FILES["imageshoe"]["tmp_name"], "./img/Shoes/" . $imgname);
+        move_uploaded_file($_FILES["imageshoe"]["tmp_name"], "../img/Shoes/" . $imgname);
 
         mysqli_query($con, "insert into shoes values ('$name','$imgname','$price','l1');");
     }
@@ -60,7 +59,7 @@ if (isset($_POST["addshoe"])) {
 <body class="font-Inter select-none text-white h-screen">
     <header class="">
         <div class="actionbar">
-            <img src="./img/Logo main.png">
+            <img src="../img/Logo main.png">
             <h2>Admin Dashboard</h2>
         </div>
     </header>
@@ -91,7 +90,7 @@ if (isset($_POST["addshoe"])) {
                             <tr>
                                 <?php $li[] = $shoe["name"]; ?>
                                 <td>
-                                    <img style="width:50px ;height: 50px;" src="./img/Shoes/<?php echo $shoe["image"] ?>" />
+                                    <img style="width:50px ;height: 50px;" src="../img/Shoes/<?php echo $shoe["image"] ?>" />
                                 </td>
                                 <td> <?php echo $shoe["name"] ?></td>
                                 <td>0%</td>
@@ -138,7 +137,7 @@ if (isset($_POST["addshoe"])) {
                 <tr>
                         <?php $li[] = $shoe["name"]; ?>
                     <td>
-                        <img style="width:50px ;height: 50px;" src="./img/Shoes/<?php echo $shoe["image"] ?>" />
+                        <img style="width:80px ;height: 80px;object-fit: cover;" src="../img/Shoes/<?php echo $shoe["image"] ?>" />
                     </td>
                     <td> <?php echo $shoe["name"] ?></td>
                     <td>0%</td>

@@ -74,6 +74,7 @@ if (isset($_POST["buttonshoe"])) {
         .card_product_img{
             width: fit-content;
             height: 250px;
+            object-fit: contain;
             transition: 0.7s;
         }
         .card_product_img:hover{
@@ -279,7 +280,7 @@ if (isset($_POST["buttonshoe"])) {
             <h1 class="text-950 text-3xl lg:text-6xl font-extrabold">BRAND OF THE WEEK</h1>
         </div>
         <div class="flex flex-col items-center gap-5">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-5">
+        <div style="display: flex;flex-wrap: wrap;justify-content: center;row-gap: 2rem;column-gap: 1rem;" >
 
                 <?php $rows = mysqli_query($con, "select * from shoes order by RAND() limit 4;"); ?>
                 <?php foreach ($rows as $row) : ?>
