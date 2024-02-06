@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            border : 1px solid red ; 
+            
+        }
+        .card_product{
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            background: linear-gradient(
+                rgba(233, 233, 233, 0.477) ,
+                #49498a49
+            );
+            box-shadow: 2px 2px 20px rgb(192, 192, 192);
+            font-family: "roboto" , sans-serif;
+            cursor: pointer;
+        }
+        .card_product:hover{
+            box-shadow: 2px 2px 20px rgb(169, 169, 169);
+        }
+        .card_product_content_header{
+            display: flex;
+            height: 50px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card_product_content_header button{
+            all: unset;
+            background-color: black;
+            padding: 0.5rem 1.2rem;
+            color : #fff;
+            border-radius: 18px;
+            font-size: 0.5rem;
+        }
+        .card_product_content_header button:hover{
+            box-shadow: 2px 2px 20px rgba(179, 179, 179, 0.627);
+        }
+        .card_product_img{
+            width: 250px;
+            height: auto;
+        }
+        .card_product_content_main{
+            margin-top: -20px;
+            margin-left: 1rem;
+        }
+        .card_product_content_footer{
+            margin-top: -10px;
+            margin-left: 1rem;
+        }
+        .card_product_content_footer h3{
+            font-weight: bold;
+        }
+        .card_product_content{
+            margin-bottom:1.2rem ;
+            height: 85px;
+        }
+    </style>
+</head>
+<body>
+    <div class=" card_product" >
+        <div>
+            <img class="card_product_img" src="./img/Shoes/65c0eca51a640Shoe 1.png" alt="">
+        </div>
+        <hr>
+        <div class="card_product_content">
+            <div class="card_product_content_header">
+                <h2 style="font-size: .9rem;font-weight: bold;">Name shoes</h2>
+                <button>+ Add to card</button>
+            </div>
+            <div style="font-size: .5rem;" class="card_product_content_main">
+                <p>Nike</p>
+            </div>
+            <div style="font-size: .9rem;" class="card_product_content_footer">
+                <h3>300$</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
