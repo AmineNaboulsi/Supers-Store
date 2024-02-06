@@ -183,22 +183,22 @@ if (isset($_POST["sendmsgverification"]) && $_POST["email"] != "" ) {
 
     <header class="">
         <div class="flex justify-between items-center shadow-2xl  bg-800 py-4 px-10 text-txt-main">
-            <a href="./index.html"><img class="w-40 lg:w-56" src="../img/Logo main.png"></a>
+            <a href="../index.php"><img class="w-40 lg:w-56" src="../img/Logo main.png"></a>
             <div>
                 <ul class="hidden lg:flex space-x-5 items-center">
-                    <li class=""><a class="font-bold hover:text-500" href="./index.html">HOME</a></li>
+                    <li class=""><a class="font-bold hover:text-500" href="../index.php">HOME</a></li>
                     <div class="relative flex items-center space-x-2 cursor-pointer">
                         <div class="font-bold hover:text-500 space-x-1">
                             <button id="closeshoptab" onclick="openshop()">SHOP</button>
                             <i class="fa-solid  fa-caret-down"></i>
                         </div>
                         <ul id="openshoptab" class="hidden text-center absolute top-[60PX] left-[-65px] bg-800 w-40 py-4 rounded-md shadow-md">
-                            <li class="hover:bg-700 py-2"><a href="./index.html#collection">Collection</a></li>
-                            <li class="hover:bg-700 py-2"><a href="./index.html#brands">Brands</a></li>
-                            <li class="hover:bg-700 py-2"><a href="./index.html#recommended">Recommended</a></li>
+                            <li class="hover:bg-700 py-2"><a href="./index.php#collection">Collection</a></li>
+                            <li class="hover:bg-700 py-2"><a href="./index.php#brands">Brands</a></li>
+                            <li class="hover:bg-700 py-2"><a href="./index.php#recommended">Recommended</a></li>
                         </ul>
                     </div>
-                    <li><a class="font-bold hover:text-500" href="./contact.html">CONTACT US</a></li>
+                    <li><a class="font-bold hover:text-500" href="./index.php">CONTACT US</a></li>
                     <li><a class="font-bold hover:text-500" href="#">ABOUT US</a></li>
                     <li><a class="font-bold hover:text-500" href="#">BLOG</a></li>
                 </ul>
@@ -226,8 +226,8 @@ if (isset($_POST["sendmsgverification"]) && $_POST["email"] != "" ) {
                 <div class="relative">
                     <i id="usermenuopen" class="fa-solid hover:text-500 text-xl fa-circle-user"></i>
                     <div id="usermenucloser" class="hidden absolute top-[60px] right-0 bg-800 px-16 py-6 rounded-md shadow-md text-nowrap space-x-2">
-                        <a class="hover:bg-400 hover:text-900 font-bold bg-600 py-2 px-10 rounded-md" href="./login.html">LOGIN</a>
-                        <a class="hover:bg-400 hover:text-900 font-bold bg-500 py-2 px-10 rounded-md" href="./sign_up.html">SIGN UP</a>
+                        <a class="hover:bg-400 hover:text-900 font-bold bg-600 py-2 px-10 rounded-md" href="./login.php">LOGIN</a>
+                        <a class="hover:bg-400 hover:text-900 font-bold bg-500 py-2 px-10 rounded-md" href="./sign_up.php">SIGN UP</a>
                     </div>
                 </div>
             </div>
@@ -239,8 +239,8 @@ if (isset($_POST["sendmsgverification"]) && $_POST["email"] != "" ) {
                             <span>
                                 <i id="usermenuopenphone" class="fa-solid hover:text-500 text-xl cursor-pointer fa-circle-user"></i>
                                 <div id="usermenucloserphone" class="hidden absolute top-[75px] right-1 bg-800 px-16 py-6 rounded-md shadow-md text-nowrap space-x-2">
-                                    <a class="hover:bg-400 hover:text-900 font-bold bg-600 py-2 px-10 rounded-md" href="../src/login.html">LOGIN</a>
-                                    <a class="hover:bg-400 hover:text-900 font-bold bg-500 py-2 px-10 rounded-md" href="../src/sign_up.html">SIGN UP</a>
+                                    <a class="hover:bg-400 hover:text-900 font-bold bg-600 py-2 px-10 rounded-md" href="./login.php">LOGIN</a>
+                                    <a class="hover:bg-400 hover:text-900 font-bold bg-500 py-2 px-10 rounded-md" href="./sign_up.php">SIGN UP</a>
                                 </div>
                             </span>
                             <i class="fa-solid hover:text-500 text-xl cursor-pointer fa-cart-shopping"></i>
@@ -256,13 +256,13 @@ if (isset($_POST["sendmsgverification"]) && $_POST["email"] != "" ) {
                             <li id="menuopnershop" class="py-2 hover:bg-200 hover:text-950"><a href="#">SHOP</a></li>
                             <div id="menuhidershop" class="bg-800 hidden">
                                 <ul class="menushoperitems">
-                                    <li class=" hover:bg-200 hover:text-950 py-2"><a href="./index.html#collection">Collection</a></li>
-                                    <li class=" hover:bg-200 hover:text-950 py-2"><a href="./index.html#brands">Brands</a></li>
-                                    <li class=" hover:bg-200 hover:text-950 py-2"><a href="./index.html#recommended">Recommended</a></li>
+                                    <li class=" hover:bg-200 hover:text-950 py-2"><a href="./index.php#collection">Collection</a></li>
+                                    <li class=" hover:bg-200 hover:text-950 py-2"><a href="./index.php#brands">Brands</a></li>
+                                    <li class=" hover:bg-200 hover:text-950 py-2"><a href="./index.php#recommended">Recommended</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <li class="py-2 hover:bg-200 hover:text-950"><a href="./contact.html">CONTACT US</a></li>
+                        <li class="py-2 hover:bg-200 hover:text-950"><a href="./contact.php">CONTACT US</a></li>
                         <li class="py-2 hover:bg-200 hover:text-950"><a href="#">ABOUT US</a></li>
                         <li class="py-2 hover:bg-200 hover:text-950"><a href="#">BLOG</a></li>
                         <div>
@@ -315,7 +315,7 @@ if (isset($_POST["sendmsgverification"]) && $_POST["email"] != "" ) {
                 <img class="w-[250px]" src="../img/Logo main.png" alt="">
                 <div class="flex flex-col">
                     <h1 class="font-bold text-2xl">HELP & INFO</h1>
-                    <a class="py-1 px-2 hover:text-neutral-900 font-semibold cursor-pointer" href="./contact.html">CONTACT US</a>
+                    <a class="py-1 px-2 hover:text-neutral-900 font-semibold cursor-pointer" href="./contact.php">CONTACT US</a>
                     <a class="py-1 px-2 hover:text-neutral-900 font-semibold cursor-pointer " href="">FAQ</a>
                 </div>
                 <div class="flex flex-col">
